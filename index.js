@@ -1,4 +1,5 @@
 var balance = 0;
+var date = new Date().toLocaleString()
 function handleIncome()
 {
 var income = parseInt(document.getElementById("incomeInput").value);
@@ -6,7 +7,10 @@ balance += income;
 document.querySelector("h2").innerHTML = "Your Balance: " + balance;
 const incomePara = document.createElement("p");
 document.getElementById("record").prepend(incomePara);
-incomePara.innerText = `Income: ${income}`;
+var text = document.getElementById("textInput").value;
+incomePara.innerText = `Credit Added: ${income} ${text} ${date}`;
+
+
 }
 function handleExpense()
 {
@@ -15,7 +19,7 @@ balance -= expense;
 document.querySelector("h2").innerHTML = "Your Balance: " + balance;
 const expensePara = document.createElement("p");
 document.getElementById("record").prepend(expensePara);
-expensePara.innerText = `Expense: ${expense}`;
+expensePara.innerText = `Credit Deducted: ${expense} ${date}`;
 }
 /*function appendIncome()
 {
