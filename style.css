@@ -2,10 +2,11 @@ h1{
     text-align: center;
     font-size:  40;
 }
-p value{
-    background-color: antiquewhite;
+p {
+    
     width: 50;
     margin-right: 50;
+    margin-left: 50;
     font-size: 30;
 }
 
@@ -43,5 +44,9 @@ h4{
 .content{
     padding-top: 50px; 
     margin-left:600px;
+}
+
+#valueValidation{
+color: red;
 }
 
