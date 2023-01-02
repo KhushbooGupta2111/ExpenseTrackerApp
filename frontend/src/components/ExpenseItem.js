@@ -1,15 +1,16 @@
-function ExpenseItem() {
+import './ExpenseItem.css';
+import ExpenseDate from './ExpenseDate';
 
-    const expenseDate = new Date(2021, 2, 28);
+function ExpenseItem(props) {
     return 
     (
-
-        <div className = "expense-item">
+    <div className = 'expense-item'>
+            <ExpenseDate date = {props.date} />
       <div></div>
       <div className="expense-item__description"></div>
       <div className="expense-item__price"></div>
     </div>
-    )
+    );
 }
 
 
